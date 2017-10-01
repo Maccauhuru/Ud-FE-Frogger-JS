@@ -98,7 +98,6 @@ Once you have completed implementing the Player and Enemy, you should instantiat
 If you would like you can add additional functionality to the game. You can add more code to the app.js file and to the Enemy and Player classes to accomplish that.
 
 ## Project Submission
-
 Download the [visual assets and a game loop engine](https://github.com/udacity/frontend-nanodegree-arcade-game). Then, using these tools you must add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger (or if you are inspired, you can make your own game! Just be sure to follow all rubric requirements for game functions).
 
 ### Evaluation
