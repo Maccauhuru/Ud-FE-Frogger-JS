@@ -1,8 +1,7 @@
-# Udacity-Front-End-Nanodegree-Classic-Arcade-Game-Clone
-Udacity Front End Developer Nanodegree Project
+# Udacity-Front-End-Nanodegree-Classic-Arcade-Game-Clone-Frogger
+Udacity Front End Web Developer Nanodegree Project : Classic Arcade Game Clone Frogger
 
 ## Project Overview
-### Project Overview
 You will be provided visual assets and a game loop engine; using these tools you must add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger.
 
 ### Note
