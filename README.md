@@ -21,11 +21,11 @@ You will learn JavaScript’s object oriented programming features to write eloq
 
 ## Project Details
 ### How Do I Complete This Project?
-1. If you need a refresher on Object Oriented JavaScript, review our course and OOJS Notes. This readme is helpful. You'll also find an archive of webcasts for projects in the Extracurricular section of the Nanodegree curriculum.
-2. If you'd like a more detailed explanation as to how the game engine works, see our HTML5 Canvas course.
+1. If you need a refresher on [Object Oriented JavaScript](https://classroom.udacity.com/courses/ud015), review our course and [OOJS Notes](https://docs.google.com/document/d/1F9DY2TtWbI29KSEIot1WXRqqao7OCd7OOC2W3oubSmc/pub?embedded=true). This [readme](https://github.com/udacity/fend-office-hours/tree/master/OOJS/Object-Oriented%20Basics) is helpful. You'll also find an archive of webcasts for projects in the Extracurricular section of the Nanodegree curriculum.
+2. If you'd like a more detailed explanation as to how the game engine works, see our [HTML5 Canvas](https://www.udacity.com/course/ud292-nd) course.
 3. Read the detailed instructions for the project.
-4. Download the art assets and provided game engine.
-5. Review the video of the completed game and take note of the game's rules.
+4. Download the [art assets and provided game engine](https://github.com/udacity/frontend-nanodegree-arcade-game).
+5. Review [the video of the completed game](https://youtu.be/SxeHV1kt7iU) and take note of the game's rules.
 
 ![Arcade Game Demo](https://youtu.be/kaifTslArtY)
 
@@ -33,7 +33,7 @@ You will learn JavaScript’s object oriented programming features to write eloq
 2. Identify the various classes you will need to write.
 3. Identify and code the properties each class must have to accomplish its tasks.
 4. Write the functions that provide functionality to each of your class instances.
-5. Review the project rubric to make sure your project is up to spec. For example make sure the functions you write are object-oriented - either class functions (like Player and Enemy) or class prototype functions such as 6. Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions. Also be sure that the readme.md file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+5. Review the project rubric to make sure your project is up to spec. For example make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as 6. Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions. Also be sure that the readme.md file is updated with your instructions on **both** how to 1. Run and 2. Play your arcade game.
 
 ## Project Instructions
 ### Frogger Game Description
@@ -55,7 +55,7 @@ In addition to the basic functionality, you can add more cool functionality to y
 Anything else you like!
 
 ### Getting Started
-You won’t have to build the game from scratch. We have provided the art assets and game engine for you. You can download or clone them from our repository.
+You won’t have to build the game from scratch. We have provided the [art assets and game engine](https://github.com/udacity/frontend-nanodegree-arcade-game) for you. You can download or clone them from our repository.
 
 The repository contains css, images, and js folders, as well as an index.html and a README.md file. Once you have downloaded the files we have provided, you will have to edit app.js to build the game.
 
@@ -100,23 +100,23 @@ If you would like you can add additional functionality to the game. You can add 
 
 ## Project Submission
 
-Download the visual assets and a game loop engine. Then, using these tools you must add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger (or if you are inspired, you can make your own game! Just be sure to follow all rubric requirements for game functions).
+Download the [visual assets and a game loop engine](https://github.com/udacity/frontend-nanodegree-arcade-game). Then, using these tools you must add a number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger (or if you are inspired, you can make your own game! Just be sure to follow all rubric requirements for game functions).
 
 ### Evaluation
 Your project will be evaluated by a Udacity reviewer according to the Classic Arcade Game Clone Rubric. Be sure to review it thoroughly before you submit. All criteria must "meet specifications" in order to pass.
 
 ### Submission
-1. The master branch is the default Github repository branch. If you wish to submit another branch, you'll need to set it as the new default branch inside your Github repository.
-2. When you're ready to submit your project go back to your Udacity Home, click on Project 4, and we'll walk you through the rest of the submission process. Due to the high volume of submissions we receive, please allow up up to 7 business days for your evaluation to be returned.
-3. If you are having any problems submitting your project or wish to check on the status of your submission, please email us at frontend-project@udacity.com or visit us in the discussion forums.
+1. The master branch is the default Github repository branch. If you wish to submit another branch, you'll need to set it as the [new default branch](https://help.github.com/articles/setting-the-default-branch/) inside your Github repository.
+2. When you're ready to submit your project go back to your Udacity Home, click on Project 4, and we'll walk you through the rest of the submission process. Due to the high volume of submissions we receive, please allow up up to **7 business days** for your evaluation to be returned.
+3. If you are having any problems submitting your project or wish to check on the status of your submission, please email us at frontend-project@udacity.com or visit us in the [discussion forums](http://discussions.udacity.com/).
 
 ### What's Next?
 You will get an email as soon as your reviewer has feedback for you. In the meantime, review your next project and feel free to get started on it or the courses supporting it!
 
-When you're ready to submit your project go back to your Udacity Home, click on Project 4, and we'll walk you through the rest of the submission process. Due to the high volume of submissions we receive, please allow up up to 7 business days for your evaluation to be returned.
+When you're ready to submit your project go back to your Udacity Home, click on Project 4, and we'll walk you through the rest of the submission process. Due to the high volume of submissions we receive, please allow up up to **7 business days** for your evaluation to be returned.
 
-If you are having any problems submitting your project or wish to check on the status of your submission, please email us at frontend-project@udacity.com or visit us in the discussion forums.
+If you are having any problems submitting your project or wish to check on the status of your submission, please email us at frontend-project@udacity.com or visit us in the [discussion forums](http://discussions.udacity.com/).
 
 ### Useful Link
-Udacity Front End Nanodegree JavaScript Style Guide
-You have not submitted the project yetSUBMIT PROJECT
+* [Udacity Front End Nanodegree JavaScript Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)
+
