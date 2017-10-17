@@ -1,3 +1,7 @@
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+// for better error handling, and performance 
+"use strict"; 
+
 // Enemies our player must avoid
 var Enemy = function() {
     // Variables applied to each of our instances go here,
