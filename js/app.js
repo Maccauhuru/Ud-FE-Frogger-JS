@@ -35,6 +35,25 @@ class Enemy {
 // This class requires an update(), render() and
 // a handleInput() method.
 
+class Player {
+    constructor() {
+
+    }
+
+    update() {
+
+    }
+
+    render() {
+
+    }
+
+    handleInput() {
+        
+    }
+
+}
+
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
