@@ -9,6 +9,8 @@ class Enemy {
         // The image/sprite for our enemies, this uses
         // a helper we've provided to easily load images        
         this.sprite = 'images/enemy-bug.png';
+        this.x = x;
+        this.y = y;
     }
 
 
@@ -37,19 +39,42 @@ class Enemy {
 
 class Player {
     constructor() {
-
+        this.sprite = 'images/char-boy.png';
+        this.startingPosition = {x:202, y:404};
+        this.dx = 101;
+        this.dy = 83;
+        this.currentPosition = this.startingPosition;
+        this.pressedKey = null;
+        this.boundary
     }
 
     update() {
+        switch(this.pressedKey) {
+            case null:
 
+                break;
+            case "left":
+
+                break;
+            case "up":
+
+                break;
+            case "right":
+
+                break;
+            case "down":
+
+                break;
+        }
+        this.pressedKey = null;
     }
 
     render() {
-
+        ctx.drawImage(Resources.get(this.sprite), this.currentPosition.x, this.currentPosition.y);
     }
 
-    handleInput() {
-        
+    handleInput(keyInput) {
+        this.pressedKey = keyInput;
     }
 
 }
@@ -58,6 +83,9 @@ class Player {
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
+const allEnemies = [];
+const player = new Player();
+
 
 
 
