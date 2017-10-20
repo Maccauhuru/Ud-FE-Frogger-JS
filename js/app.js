@@ -2,7 +2,7 @@
 // for better error handling, and performance 
 "use strict"; 
 
-
+// BOARD values to determine objects moves and position
 // width, height, numRows, numCols refer to values from engine.js
 const BOARD = {
     width : 505,
@@ -27,12 +27,13 @@ Object.seal(BOARD);
 
 // Enemies our player must avoid
 class Enemy {
-    constructor() {
+    constructor(y, speed) {
         // The image/sprite for our enemies, this uses
         // a helper we've provided to easily load images        
         this.sprite = 'images/enemy-bug.png';
-        this.x = x;
+        this.x = 0;
         this.y = y;
+        this.speed = speed;
     }
 
 
@@ -42,6 +43,11 @@ class Enemy {
         // You should multiply any movement by the dt parameter
         // which will ensure the game runs at the same speed for
         // all computers.
+        if (this.x > BOARD.Boundary.right) {
+            this.x = BOARD.Boundary.left;
+        } else {
+            this.x += this.speed * dt;
+        }
     }
 
     // Draw the enemy on the screen, required method for game
@@ -64,11 +70,11 @@ class Player {
         this.pressedKey = null;
     }
 
+    // update player's position inside the board.
     update() {
-
         switch(this.pressedKey) {
             case null:
-                // don't do anything
+                // no input. don't do anything. 
                 break;
             case "left":
                 // move left if player is not in the left boundary
@@ -112,7 +118,7 @@ class Player {
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
-const allEnemies = [];
+const allEnemies = [new Enemy(404-83*1, 90), new Enemy(404-83*2, 150), new Enemy(404-83*3, 100), new Enemy(404-83*4, 120)];
 const player = new Player();
 
 
