@@ -65,26 +65,39 @@ class Player {
     }
 
     update() {
+
         switch(this.pressedKey) {
             case null:
                 // don't do anything
                 break;
             case "left":
-                this.currentPosition.x -= BOARD.dx;
+                // move left if player is not in the left boundary
+                if (this.currentPosition.x !== BOARD.Boundary.left) {
+                    this.currentPosition.x -= BOARD.dx;
+                } 
                 break;
             case "up":
-                this.currentPosition.y -= BOARD.dy;
+                // move up if player is not in the upper boundary
+                if (this.currentPosition.y !== BOARD.Boundary.up) {
+                    this.currentPosition.y -= BOARD.dy;
+                }
                 break;
             case "right":
-                this.currentPosition.x += BOARD.dx;
+                // move right if player is not in the right boundary
+                if (this.currentPosition.x !== BOARD.Boundary.right) {
+                    this.currentPosition.x += BOARD.dx;
+                }
                 break;
             case "down":
-                this.currentPosition.y += BOARD.dy;
+                // move down if player is not in the down boundary
+                if (this.currentPosition.y !== BOARD.Boundary.down) {
+                    this.currentPosition.y += BOARD.dy;
+                }
                 break;
         }
+        // back to null
         this.pressedKey = null;
     }
-
     render() {
         ctx.drawImage(Resources.get(this.sprite), this.currentPosition.x, this.currentPosition.y);
     }
