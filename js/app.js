@@ -3,6 +3,28 @@
 "use strict"; 
 
 
+// width, height, numRows, numCols refer to values from engine.js
+const BOARD = {
+    width : 505,
+    height : 606,
+    numRows : 6,
+    numCols : 5,
+    dx : 101,
+    dy : 83,
+    playerStartPosition: {
+        x : 202,
+        y : 404,
+    },
+    Boundary : { // inclusive values
+        left : 0,
+        right : 404,
+        up : 404-83*5,
+        down : 404,
+    },
+}
+Object.seal(BOARD);
+
+
 // Enemies our player must avoid
 class Enemy {
     constructor() {
@@ -30,9 +52,6 @@ class Enemy {
 
 }
 
-
-
-
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
@@ -40,30 +59,27 @@ class Enemy {
 class Player {
     constructor() {
         this.sprite = 'images/char-boy.png';
-        this.startingPosition = {x:202, y:404};
-        this.dx = 101;
-        this.dy = 83;
+        this.startingPosition = BOARD.playerStartPosition;
         this.currentPosition = this.startingPosition;
         this.pressedKey = null;
-        this.boundary
     }
 
     update() {
         switch(this.pressedKey) {
             case null:
-
+                // don't do anything
                 break;
             case "left":
-
+                this.currentPosition.x -= BOARD.dx;
                 break;
             case "up":
-
+                this.currentPosition.y -= BOARD.dy;
                 break;
             case "right":
-
+                this.currentPosition.x += BOARD.dx;
                 break;
             case "down":
-
+                this.currentPosition.y += BOARD.dy;
                 break;
         }
         this.pressedKey = null;
@@ -85,8 +101,6 @@ class Player {
 // Place the player object in a variable called player
 const allEnemies = [];
 const player = new Player();
-
-
 
 
 // This listens for key presses and sends the keys to your
