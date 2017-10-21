@@ -34,6 +34,7 @@ class Enemy {
         this.x = 0;
         this.y = y;
         this.speed = speed;
+        this.halfWidth = 45;
     }
 
 
@@ -47,6 +48,15 @@ class Enemy {
             this.x = BOARD.Boundary.left;
         } else {
             this.x += this.speed * dt;
+            
+            // collision detection
+            if (this.y === player.getY()) {
+                if (Math.abs(this.x - player.getX()) < (this.halfWidth + player.getHalfWidth())) {
+                    player.resetPosition();
+                    player.render();
+                }
+            }
+            
         }
     }
 
@@ -61,13 +71,29 @@ class Enemy {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
-
 class Player {
     constructor() {
         this.sprite = 'images/char-boy.png';
-        this.startingPosition = BOARD.playerStartPosition;
-        this.currentPosition = this.startingPosition;
+        this.currentPosition = BOARD.playerStartPosition;
         this.pressedKey = null;
+        this.halfWidth = 30;
+    }
+
+    getX() {
+        return this.currentPosition.x;
+    }
+
+    getY() {
+        return this.currentPosition.y;
+    }
+
+    resetPosition() {
+        this.currentPosition.x = 202;
+        this.currentPosition.y = 404;
+    }
+
+    getHalfWidth() {
+        return this.halfWidth;
     }
 
     // update player's position inside the board.
