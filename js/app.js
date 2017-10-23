@@ -52,8 +52,7 @@ class Enemy {
             // collision detection
             if (this.y === player.getY()) {
                 if (Math.abs(this.x - player.getX()) < (this.halfWidth + player.getHalfWidth())) {
-                    player.resetPosition();
-                    player.render();
+                    player.resetPlayer();
                 }
             }
             
@@ -87,9 +86,10 @@ class Player {
         return this.currentPosition.y;
     }
 
-    resetPosition() {
+    resetPlayer() {
         this.currentPosition.x = 202;
         this.currentPosition.y = 404;
+        this.render();
     }
 
     getHalfWidth() {
@@ -98,6 +98,10 @@ class Player {
 
     // update player's position inside the board.
     update() {
+        if (this.currentPosition.y === 404-83*5) {
+            window.alert("you won!! press ok if you want to play again!");
+            this.resetPlayer();
+        }
         switch(this.pressedKey) {
             case null:
                 // no input. don't do anything. 
@@ -129,6 +133,7 @@ class Player {
         }
         // back to null
         this.pressedKey = null;
+
     }
     render() {
         ctx.drawImage(Resources.get(this.sprite), this.currentPosition.x, this.currentPosition.y);
